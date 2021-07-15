@@ -11,10 +11,10 @@ import {
   TextField,
   Typography
 } from '@material-ui/core';
-import FacebookIcon from 'src/icons/Facebook';
-import GoogleIcon from 'src/icons/Google';
+import { Facebook as FacebookIcon } from 'src/icons/Facebook';
+import { Google as GoogleIcon } from 'src/icons/Google';
 
-const Login = () => {
+export const Login = () => {
   const navigate = useNavigate();
 
   return (
@@ -180,5 +180,3 @@ const Login = () => {
     </>
   );
 };
-
-export default Login;

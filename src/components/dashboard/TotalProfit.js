@@ -8,7 +8,7 @@ import {
 import { indigo } from '@material-ui/core/colors';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 
-const TotalProfit = (props) => (
+export const TotalProfit = (props) => (
   <Card {...props}>
     <CardContent>
       <Grid
@@ -46,5 +46,3 @@ const TotalProfit = (props) => (
     </CardContent>
   </Card>
 );
-
-export default TotalProfit;

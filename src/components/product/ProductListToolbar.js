@@ -9,7 +9,7 @@ import {
 } from '@material-ui/core';
 import { Search as SearchIcon } from 'react-feather';
 
-const ProductListToolbar = (props) => (
+export const ProductListToolbar = (props) => (
   <Box {...props}>
     <Box
       sx={{
@@ -57,5 +57,3 @@ const ProductListToolbar = (props) => (
     </Box>
   </Box>
 );
-
-export default ProductListToolbar;

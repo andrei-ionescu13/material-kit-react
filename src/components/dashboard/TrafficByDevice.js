@@ -13,7 +13,7 @@ import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import PhoneIcon from '@material-ui/icons/Phone';
 import TabletIcon from '@material-ui/icons/Tablet';
 
-const TrafficByDevice = (props) => {
+export const TrafficByDevice = (props) => {
   const theme = useTheme();
 
   const data = {
@@ -133,5 +133,3 @@ const TrafficByDevice = (props) => {
     </Card>
   );
 };
-
-export default TrafficByDevice;

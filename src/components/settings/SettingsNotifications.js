@@ -11,7 +11,7 @@ import {
   Typography
 } from '@material-ui/core';
 
-const SettingsNotifications = (props) => (
+export const SettingsNotifications = (props) => (
   <form {...props}>
     <Card>
       <CardHeader
@@ -134,5 +134,3 @@ const SettingsNotifications = (props) => (
     </Card>
   </form>
 );
-
-export default SettingsNotifications;

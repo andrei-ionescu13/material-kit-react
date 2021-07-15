@@ -10,7 +10,7 @@ import {
 import { orange } from '@material-ui/core/colors';
 import InsertChartIcon from '@material-ui/icons/InsertChartOutlined';
 
-const TasksProgress = (props) => (
+export const TasksProgress = (props) => (
   <Card
     sx={{ height: '100%' }}
     {...props}
@@ -57,5 +57,3 @@ const TasksProgress = (props) => (
     </CardContent>
   </Card>
 );
-
-export default TasksProgress;

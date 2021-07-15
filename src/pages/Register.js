@@ -13,7 +13,7 @@ import {
   Typography
 } from '@material-ui/core';
 
-const Register = () => {
+export const Register = () => {
   const navigate = useNavigate();
 
   return (
@@ -195,5 +195,3 @@ const Register = () => {
     </>
   );
 };
-
-export default Register;

@@ -5,7 +5,7 @@ import {
   Typography
 } from '@material-ui/core';
 
-const NotFound = () => (
+export const NotFound = () => (
   <>
     <Helmet>
       <title>404 | Material Kit</title>
@@ -51,5 +51,3 @@ const NotFound = () => (
     </Box>
   </>
 );
-
-export default NotFound;

@@ -8,12 +8,14 @@ import {
   IconButton,
   Toolbar
 } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
-import InputIcon from '@material-ui/icons/Input';
-import Logo from './Logo';
+import {
+  Input as InputIcon,
+  Menu as MenuIcon,
+  Notifications as NotificationsIcon,
+} from '@material-ui/icons';
+import { Logo } from './Logo';
 
-const DashboardNavbar = ({ onMobileNavOpen, ...rest }) => {
+export const DashboardNavbar = ({ onMobileNavOpen, ...rest }) => {
   const [notifications] = useState([]);
 
   return (
@@ -66,5 +68,3 @@ const DashboardNavbar = ({ onMobileNavOpen, ...rest }) => {
 DashboardNavbar.propTypes = {
   onMobileNavOpen: PropTypes.func
 };
-
-export default DashboardNavbar;

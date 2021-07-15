@@ -11,7 +11,7 @@ import {
 import AccessTimeIcon from '@material-ui/icons/AccessTime';
 import GetAppIcon from '@material-ui/icons/GetApp';
 
-const ProductCard = ({ product, ...rest }) => (
+export const ProductCard = ({ product, ...rest }) => (
   <Card
     sx={{
       display: 'flex',
@@ -102,5 +102,3 @@ const ProductCard = ({ product, ...rest }) => (
 ProductCard.propTypes = {
   product: PropTypes.object.isRequired
 };
-
-export default ProductCard;

@@ -4,10 +4,10 @@ import {
   Container,
   Grid
 } from '@material-ui/core';
-import AccountProfile from 'src/components/account/AccountProfile';
-import AccountProfileDetails from 'src/components/account/AccountProfileDetails';
+import { AccountProfile } from 'src/components/account/AccountProfile';
+import { AccountProfileDetails } from 'src/components/account/AccountProfileDetails';
 
-const Account = () => (
+export const Account = () => (
   <>
     <Helmet>
       <title>Account | Material Kit</title>
@@ -45,5 +45,3 @@ const Account = () => (
     </Box>
   </>
 );
-
-export default Account;

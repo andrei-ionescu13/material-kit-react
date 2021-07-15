@@ -9,7 +9,7 @@ import {
   TextField
 } from '@material-ui/core';
 
-const SettingsPassword = (props) => {
+export const SettingsPassword = (props) => {
   const [values, setValues] = useState({
     password: '',
     confirm: ''
@@ -71,5 +71,3 @@ const SettingsPassword = (props) => {
     </form>
   );
 };
-
-export default SettingsPassword;

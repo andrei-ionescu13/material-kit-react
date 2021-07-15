@@ -6,7 +6,7 @@ import {
 import PropTypes from 'prop-types';
 import { Button, ListItem } from '@material-ui/core';
 
-const NavItem = ({
+export const NavItem = ({
   href,
   icon: Icon,
   title,
@@ -63,5 +63,3 @@ NavItem.propTypes = {
   icon: PropTypes.elementType,
   title: PropTypes.string
 };
-
-export default NavItem;

@@ -5,11 +5,11 @@ import {
   Grid,
   Pagination
 } from '@material-ui/core';
-import ProductListToolbar from 'src/components/product/ProductListToolbar';
-import ProductCard from 'src/components/product//ProductCard';
-import products from 'src/__mocks__/products';
+import { ProductListToolbar } from 'src/components/product/ProductListToolbar';
+import { ProductCard } from 'src/components/product//ProductCard';
+import { products } from 'src/__mocks__/products';
 
-const ProductList = () => (
+export const ProductList = () => (
   <>
     <Helmet>
       <title>Products | Material Kit</title>
@@ -58,5 +58,3 @@ const ProductList = () => (
     </Box>
   </>
 );
-
-export default ProductList;

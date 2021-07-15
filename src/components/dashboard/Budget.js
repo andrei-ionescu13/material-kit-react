@@ -10,7 +10,7 @@ import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import MoneyIcon from '@material-ui/icons/Money';
 import { red } from '@material-ui/core/colors';
 
-const Budget = (props) => (
+export const Budget = (props) => (
   <Card
     sx={{ height: '100%' }}
     {...props}
@@ -75,5 +75,3 @@ const Budget = (props) => (
     </CardContent>
   </Card>
 );
-
-export default Budget;

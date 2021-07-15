@@ -12,7 +12,7 @@ import {
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
-const Sales = (props) => {
+export const Sales = (props) => {
   const theme = useTheme();
 
   const data = {
@@ -138,5 +138,3 @@ const Sales = (props) => {
     </Card>
   );
 };
-
-export default Sales;

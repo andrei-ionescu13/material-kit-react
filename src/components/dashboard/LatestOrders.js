@@ -18,7 +18,7 @@ import {
 } from '@material-ui/core';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
-const orders = [
+export const orders = [
   {
     id: uuid(),
     ref: 'CDD1049',
@@ -81,7 +81,7 @@ const orders = [
   }
 ];
 
-const LatestOrders = (props) => (
+export const LatestOrders = (props) => (
   <Card {...props}>
     <CardHeader title="Latest Orders" />
     <Divider />
@@ -160,5 +160,3 @@ const LatestOrders = (props) => (
     </Box>
   </Card>
 );
-
-export default LatestOrders;

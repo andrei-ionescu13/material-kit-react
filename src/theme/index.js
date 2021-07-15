@@ -1,9 +1,9 @@
 import { colors } from '@material-ui/core';
 import { createTheme } from '@material-ui/core/styles';
-import shadows from './shadows';
-import typography from './typography';
+import { shadows } from './shadows';
+import { typography } from './typography';
 
-const theme = createTheme({
+export const theme = createTheme({
   components: {
     MuiButton: {
       styleOverrides: {
@@ -14,23 +14,17 @@ const theme = createTheme({
     },
     MuiCssBaseline: {
       styleOverrides: {
-        '*': {
-          boxSizing: 'border-box'
-        },
-        html: {
-          MozOsxFontSmoothing: 'grayscale',
-          WebkitFontSmoothing: 'antialiased',
-          height: '100%',
-          width: '100%'
-        },
         body: {
           height: '100%'
         },
-        '#root': {
+        html: {
+          height: '100%'
+        },
+        '& #root': {
           height: '100%'
         }
       }
-    },
+    }
   },
   palette: {
     background: {
@@ -52,5 +46,3 @@ const theme = createTheme({
   },
   typography
 });
-
-export default theme;

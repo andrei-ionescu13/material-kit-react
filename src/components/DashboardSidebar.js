@@ -21,7 +21,7 @@ import {
   UserPlus as UserPlusIcon,
   Users as UsersIcon
 } from 'react-feather';
-import NavItem from './NavItem';
+import { NavItem } from './NavItem';
 
 const user = {
   avatar: '/static/images/avatars/avatar_6.png',
@@ -72,7 +72,7 @@ const items = [
   }
 ];
 
-const DashboardSidebar = ({ onMobileClose, openMobile }) => {
+export const DashboardSidebar = ({ onMobileClose, openMobile }) => {
   const location = useLocation();
   const lgUp = useMediaQuery((theme) => theme.breakpoints.up('lg'));
 
@@ -221,5 +221,3 @@ DashboardSidebar.defaultProps = {
   onMobileClose: () => { },
   openMobile: false
 };
-
-export default DashboardSidebar;
