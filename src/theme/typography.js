@@ -4,36 +4,30 @@ export const typography = {
     fontWeight: 500
   },
   h1: {
-    fontWeight: 500,
-    fontSize: 35,
-    letterSpacing: '-0.24px'
+    fontWeight: 600,
+    fontSize: '3.5rem'
   },
   h2: {
-    fontWeight: 500,
-    fontSize: 29,
-    letterSpacing: '-0.24px'
+    fontWeight: 600,
+    fontSize: '3rem'
   },
   h3: {
-    fontWeight: 500,
-    fontSize: 24,
-    letterSpacing: '-0.06px'
+    fontWeight: 600,
+    fontSize: '2.25rem'
   },
   h4: {
-    fontWeight: 500,
-    fontSize: 20,
-    letterSpacing: '-0.06px'
+    fontWeight: 600,
+    fontSize: '2rem'
   },
   h5: {
-    fontWeight: 500,
-    fontSize: 16,
-    letterSpacing: '-0.05px'
+    fontWeight: 600,
+    fontSize: '1.5rem'
   },
   h6: {
-    fontWeight: 500,
-    fontSize: 14,
-    letterSpacing: '-0.05px'
+    fontWeight: 600,
+    fontSize: '1.125rem'
   },
   overline: {
-    fontWeight: 500
+    fontWeight: 600
   }
 };
