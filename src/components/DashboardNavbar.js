@@ -25,7 +25,12 @@ export const DashboardNavbar = ({ onMobileNavOpen, ...rest }) => {
     >
       <Toolbar>
         <RouterLink to="/">
-          <Logo />
+          <Logo
+            sx={{
+              height: 40,
+              width: 40
+            }}
+          />
         </RouterLink>
         <Box sx={{ flexGrow: 1 }} />
         <Box

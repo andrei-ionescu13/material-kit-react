@@ -1,6 +1,7 @@
 export const typography = {
+  fontFamily: 'Inter, sans-serif',
   button: {
-    fontWeight: 600
+    fontWeight: 500
   },
   h1: {
     fontWeight: 500,
