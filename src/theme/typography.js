@@ -1,4 +1,7 @@
 export default {
+  button: {
+    fontWeight: 600
+  },
   h1: {
     fontWeight: 500,
     fontSize: 35,

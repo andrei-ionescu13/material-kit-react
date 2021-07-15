@@ -7,9 +7,9 @@ import {
   Button,
   Divider,
   Drawer,
-  Hidden,
   List,
-  Typography
+  Typography,
+  useMediaQuery
 } from '@material-ui/core';
 import {
   AlertCircle as AlertCircleIcon,
@@ -74,6 +74,7 @@ const items = [
 
 const DashboardSidebar = ({ onMobileClose, openMobile }) => {
   const location = useLocation();
+  const lgUp = useMediaQuery((theme) => theme.breakpoints.up('lg'));
 
   useEffect(() => {
     if (openMobile && onMobileClose) {
@@ -176,7 +177,7 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
 
   return (
     <>
-      <Hidden lgUp>
+      {!lgUp && (
         <Drawer
           anchor="left"
           onClose={onMobileClose}
@@ -190,8 +191,8 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
         >
           {content}
         </Drawer>
-      </Hidden>
-      <Hidden lgDown>
+      )}
+      {lgUp && (
         <Drawer
           anchor="left"
           open
@@ -206,7 +207,7 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
         >
           {content}
         </Drawer>
-      </Hidden>
+      )}
     </>
   );
 };

@@ -5,7 +5,6 @@ import {
   AppBar,
   Badge,
   Box,
-  Hidden,
   IconButton,
   Toolbar
 } from '@material-ui/core';
@@ -27,7 +26,14 @@ const DashboardNavbar = ({ onMobileNavOpen, ...rest }) => {
           <Logo />
         </RouterLink>
         <Box sx={{ flexGrow: 1 }} />
-        <Hidden lgDown>
+        <Box
+          sx={{
+            display: {
+              lg: 'block',
+              xs: 'none'
+            }
+          }}
+        >
           <IconButton color="inherit">
             <Badge
               badgeContent={notifications.length}
@@ -40,15 +46,18 @@ const DashboardNavbar = ({ onMobileNavOpen, ...rest }) => {
           <IconButton color="inherit">
             <InputIcon />
           </IconButton>
-        </Hidden>
-        <Hidden lgUp>
-          <IconButton
-            color="inherit"
-            onClick={onMobileNavOpen}
-          >
-            <MenuIcon />
-          </IconButton>
-        </Hidden>
+        </Box>
+        <IconButton
+          color="inherit"
+          onClick={onMobileNavOpen}
+          sx={{
+            display: {
+              lg: 'none'
+            }
+          }}
+        >
+          <MenuIcon />
+        </IconButton>
       </Toolbar>
     </AppBar>
   );

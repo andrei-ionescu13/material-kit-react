@@ -1,8 +1,37 @@
-import { createMuiTheme, colors } from '@material-ui/core';
+import { colors } from '@material-ui/core';
+import { createTheme } from '@material-ui/core/styles';
 import shadows from './shadows';
 import typography from './typography';
 
-const theme = createMuiTheme({
+const theme = createTheme({
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: 'none'
+        }
+      }
+    },
+    MuiCssBaseline: {
+      styleOverrides: {
+        '*': {
+          boxSizing: 'border-box'
+        },
+        html: {
+          MozOsxFontSmoothing: 'grayscale',
+          WebkitFontSmoothing: 'antialiased',
+          height: '100%',
+          width: '100%'
+        },
+        body: {
+          height: '100%'
+        },
+        '#root': {
+          height: '100%'
+        }
+      }
+    },
+  },
   palette: {
     background: {
       default: '#F4F6F8',
@@ -18,6 +47,9 @@ const theme = createMuiTheme({
     }
   },
   shadows,
+  shape: {
+    borderRadius: 16
+  },
   typography
 });
 
