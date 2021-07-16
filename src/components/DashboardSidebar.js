@@ -110,7 +110,7 @@ export const DashboardSidebar = ({ onMobileClose, openMobile }) => {
         />
         <Typography
           color="textPrimary"
-          variant="h5"
+          variant="h6"
         >
           {user.name}
         </Typography>

@@ -39,19 +39,19 @@ export const AccountProfile = (props) => (
         <Typography
           color="textPrimary"
           gutterBottom
-          variant="h3"
+          variant="h6"
         >
           {user.name}
         </Typography>
         <Typography
           color="textSecondary"
-          variant="body1"
+          variant="body2"
         >
           {`${user.city} ${user.country}`}
         </Typography>
         <Typography
           color="textSecondary"
-          variant="body1"
+          variant="body2"
         >
           {`${moment().format('hh:mm A')} ${user.timezone}`}
         </Typography>

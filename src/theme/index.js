@@ -12,6 +12,16 @@ export const theme = createTheme({
         }
       }
     },
+    MuiCardHeader: {
+      defaultProps: {
+        subheaderTypographyProps: {
+          variant: 'body2'
+        },
+        titleTypographyProps: {
+          variant: 'h6'
+        }
+      }
+    },
     MuiCssBaseline: {
       styleOverrides: {
         body: {

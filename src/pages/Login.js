@@ -58,7 +58,7 @@ export const Login = () => {
                 <Box sx={{ mb: 3 }}>
                   <Typography
                     color="textPrimary"
-                    variant="h2"
+                    variant="h4"
                   >
                     Sign in
                   </Typography>
@@ -160,14 +160,14 @@ export const Login = () => {
                 </Box>
                 <Typography
                   color="textSecondary"
-                  variant="body1"
+                  variant="body2"
                 >
                   Don&apos;t have an account?
                   {' '}
                   <Link
                     component={RouterLink}
                     to="/register"
-                    variant="h6"
+                    variant="inherit"
                   >
                     Sign up
                   </Link>

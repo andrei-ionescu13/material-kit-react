@@ -38,7 +38,7 @@ export const ProductCard = ({ product, ...rest }) => (
         align="center"
         color="textPrimary"
         gutterBottom
-        variant="h4"
+        variant="h5"
       >
         {product.title}
       </Typography>

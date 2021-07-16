@@ -44,7 +44,7 @@ export const Register = () => {
                 email: Yup.string().email('Must be a valid email').max(255).required('Email is required'),
                 firstName: Yup.string().max(255).required('First name is required'),
                 lastName: Yup.string().max(255).required('Last name is required'),
-                password: Yup.string().max(255).required('password is required'),
+                password: Yup.string().max(255).required('Password is required'),
                 policy: Yup.boolean().oneOf([true], 'This field must be checked')
               })
             }
@@ -65,7 +65,7 @@ export const Register = () => {
                 <Box sx={{ mb: 3 }}>
                   <Typography
                     color="textPrimary"
-                    variant="h2"
+                    variant="h4"
                   >
                     Create new account
                   </Typography>
@@ -141,7 +141,7 @@ export const Register = () => {
                   />
                   <Typography
                     color="textSecondary"
-                    variant="body1"
+                    variant="body2"
                   >
                     I have read the
                     {' '}
@@ -149,8 +149,8 @@ export const Register = () => {
                       color="primary"
                       component={RouterLink}
                       to="#"
-                      underline="always"
-                      variant="h6"
+                      underline="hover"
+                      variant="inherit"
                     >
                       Terms and Conditions
                     </Link>
@@ -175,14 +175,14 @@ export const Register = () => {
                 </Box>
                 <Typography
                   color="textSecondary"
-                  variant="body1"
+                  variant="body2"
                 >
                   Have an account?
                   {' '}
                   <Link
                     component={RouterLink}
                     to="/login"
-                    variant="h6"
+                    variant="inherit"
                   >
                     Sign in
                   </Link>

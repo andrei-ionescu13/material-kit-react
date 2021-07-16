@@ -38,7 +38,7 @@ export const SettingsNotifications = (props) => (
             <Typography
               color="textPrimary"
               gutterBottom
-              variant="h6"
+              variant="subtitle2"
             >
               Notifications
             </Typography>
@@ -87,7 +87,7 @@ export const SettingsNotifications = (props) => (
             <Typography
               color="textPrimary"
               gutterBottom
-              variant="h6"
+              variant="subtitle2"
             >
               Messages
             </Typography>

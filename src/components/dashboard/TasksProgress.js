@@ -24,14 +24,13 @@ export const TasksProgress = (props) => (
         <Grid item>
           <Typography
             color="textSecondary"
-            gutterBottom
-            variant="h6"
+            variant="overline"
           >
-            TASKS PROGRESS
+            Tasks progress
           </Typography>
           <Typography
             color="textPrimary"
-            variant="h3"
+            variant="h4"
           >
             75.5%
           </Typography>

@@ -25,13 +25,13 @@ export const Budget = (props) => (
           <Typography
             color="textSecondary"
             gutterBottom
-            variant="h6"
+            variant="overline"
           >
-            BUDGET
+            Budget
           </Typography>
           <Typography
             color="textPrimary"
-            variant="h3"
+            variant="h4"
           >
             $24,000
           </Typography>
