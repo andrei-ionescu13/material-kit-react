@@ -145,7 +145,7 @@ export const DashboardSidebar = ({ onMobileClose, openMobile }) => {
         <Typography
           align="center"
           gutterBottom
-          variant="h4"
+          variant="h5"
         >
           Need more?
         </Typography>

@@ -31,7 +31,7 @@ export const Budget = (props) => (
           </Typography>
           <Typography
             color="textPrimary"
-            variant="h4"
+            variant="h5"
           >
             $24,000
           </Typography>

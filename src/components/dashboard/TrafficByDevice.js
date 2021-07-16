@@ -121,7 +121,7 @@ export const TrafficByDevice = (props) => {
               </Typography>
               <Typography
                 style={{ color }}
-                variant="h3"
+                variant="h6"
               >
                 {value}
                 %
