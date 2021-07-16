@@ -27,7 +27,7 @@ export const TotalCustomers = (props) => (
           </Typography>
           <Typography
             color="textPrimary"
-            variant="h4"
+            variant="h5"
           >
             1,600
           </Typography>

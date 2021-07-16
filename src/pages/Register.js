@@ -65,7 +65,7 @@ export const Register = () => {
                 <Box sx={{ mb: 3 }}>
                   <Typography
                     color="textPrimary"
-                    variant="h4"
+                    variant="h5"
                   >
                     Create new account
                   </Typography>

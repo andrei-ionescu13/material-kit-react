@@ -58,7 +58,7 @@ export const Login = () => {
                 <Box sx={{ mb: 3 }}>
                   <Typography
                     color="textPrimary"
-                    variant="h4"
+                    variant="h5"
                   >
                     Sign in
                   </Typography>

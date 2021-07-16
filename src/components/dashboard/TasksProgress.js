@@ -30,7 +30,7 @@ export const TasksProgress = (props) => (
           </Typography>
           <Typography
             color="textPrimary"
-            variant="h4"
+            variant="h5"
           >
             75.5%
           </Typography>

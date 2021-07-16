@@ -25,7 +25,7 @@ export const TotalProfit = (props) => (
           </Typography>
           <Typography
             color="textPrimary"
-            variant="h4"
+            variant="h5"
           >
             $23,200
           </Typography>
